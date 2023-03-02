@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development configuration
+.env
+venv/
+
+# Dependency directories
+venv/
+env/
+env.bak/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Logs and databases
+*.log
+*.db
+*.sqlite3
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Other project-specific files
+*.swp
