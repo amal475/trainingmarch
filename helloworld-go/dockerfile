@@ -1,0 +1,4 @@
+from golang
+workdir /app
+copy bin/hello .
+cmd ["/app/hello"]
