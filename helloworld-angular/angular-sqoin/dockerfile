@@ -1,0 +1,3 @@
+from nginx
+copy dist/angular-sqoin /usr/share/nginx/html
+
