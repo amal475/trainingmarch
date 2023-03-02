@@ -1,6 +1,9 @@
-## How to build this project inside a docker 
+## How to build this project inside a docker ## 
 ``docker run -it -v `pwd`:/code  -w /code thevlang/vlang bash ``
+
  ```mkdir bin```
+ 
 ```v hello.v -o /bin/hello```
-```bin/hello`
+
+```bin/hello```
 
