@@ -11,5 +11,7 @@
  
 
 ``` ng build --prod ```
+<img width="1216" alt="image" src="https://user-images.githubusercontent.com/55437881/222471735-d14952fa-69fe-4096-a8c8-9d1275078b80.png">
+
 
 
