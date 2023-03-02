@@ -5,7 +5,8 @@
   ```go build  -o bin/hello  hello.go ```
 ### how to build this project with docker file ###
 
-```docker build -t idamal/buildhellogo .``
+```docker build -t idamal/buildhellogo . ```
+
 ```docker run -p 8085:8080 idamal/buildhellogo```
 
 
