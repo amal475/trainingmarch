@@ -1,0 +1,5 @@
+from idamal/rustnighyly
+workdir /code
+copy target/release/code .
+cmd ["/code/code"]
+
