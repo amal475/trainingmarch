@@ -1,0 +1,14 @@
+# Compiled object files
+*.o
+
+# Executable binary files
+helloworld
+
+# Build artifacts
+build/
+/bin/
+# macOS files to ignore
+.DS_Store
+
+# Windows files to ignore
+Thumbs.db
