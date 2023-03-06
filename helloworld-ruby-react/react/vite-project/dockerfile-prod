@@ -1,0 +1,4 @@
+from node 
+copy . .
+run npm i 
+cmd [ "npm", "run" , "dev"]

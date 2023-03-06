@@ -1,0 +1,4 @@
+from ange10k/angularcli 
+copy . .
+run npm i 
+cmd ["ng","serve", "--host=0.0.0.0"]
