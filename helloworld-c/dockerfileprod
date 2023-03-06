@@ -1,0 +1,7 @@
+from  gcc
+workdir /app
+copy helloworld.c /app
+run mkdir bin
+run gcc -o bin/helloworld helloworld.c
+cmd ["bin/helloworld"]
+ 

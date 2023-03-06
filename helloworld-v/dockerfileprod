@@ -1,0 +1,6 @@
+from thevlang/vlang
+workdir /code
+copy hello.v /code 
+run mkdir bin
+run v hello.v -o /code/bin/hello
+cmd ["bin/hello"]

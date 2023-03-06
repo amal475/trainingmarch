@@ -1,0 +1,8 @@
+show collections
+exit
+show collections
+show db.collections.find()
+show collections
+use admin 
+show databases;
+shoow databases

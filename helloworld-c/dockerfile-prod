@@ -1,0 +1,4 @@
+from gcc
+workdir /app
+copy helloworld.c /app
+cmd ["gcc","helloworld.c"]

@@ -1,0 +1,1 @@
+docker run -it --network training-march-1 --ip 10.0.0.100 -v `pwd`/data:/data/db -v `pwd`/init.js:/docker-entrypoint-initdb.d/init.js mongo

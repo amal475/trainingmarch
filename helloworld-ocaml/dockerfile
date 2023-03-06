@@ -1,0 +1,24 @@
+FROM ocaml/opam:debian-10-ocaml-4.11 AS build
+
+WORKDIR /app
+
+# Install dependencies
+RUN opam update && \
+    opam install dune cohttp-lwt-unix yojson -y
+
+# Copy source code and build
+COPY . .
+RUN dune build server.exe
+
+FROM debian:10-slim
+
+WORKDIR /app
+
+# Copy executable from the build container
+COPY --from=build /app/_build/default/server.exe .
+
+# Expose port 8081
+EXPOSE 8081
+
+# Start the server
+CMD ["./server.exe"]

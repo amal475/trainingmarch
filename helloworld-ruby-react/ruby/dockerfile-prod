@@ -1,0 +1,7 @@
+from ruby 
+workdir /code 
+copy Gemfile /code
+
+copy server.rb /code
+run bundle install
+CMD ["ruby","server.rb"]

@@ -1,0 +1,4 @@
+from idamal/python-flask
+workdir /app 
+copy hello.py /app
+cmd ["python", "hello.py"]

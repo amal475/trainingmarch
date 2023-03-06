@@ -1,0 +1,4 @@
+from ruby 
+workdir /code 
+copy Gemfile /code
+run bundle install

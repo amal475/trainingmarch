@@ -1,0 +1,13 @@
+FROM php:7.4-apache
+
+# Install MongoDB driver
+RUN pecl install mongodb && \
+    docker-php-ext-enable mongodb
+
+# Copy your PHP application files to the Docker image
+COPY index.php /var/www/html/
+
+# Expose port 80 for Apache
+EXPOSE 80
+
+

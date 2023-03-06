@@ -1,0 +1,5 @@
+from node 
+workdir /app
+copy index.js package.json /app
+run npm i
+cmd ["node","index.js"]
