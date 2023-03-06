@@ -1,26 +1,22 @@
 #!/bin/bash
-
-
-
-
-# Check port 80
 source variables_env.ini
-
-
-
 # Check port 443
 if which nc >/dev/null; then
-    echo "nc est installé"
+  echo "nc is installed"
 else
-    echo "nc n'est pas installé"
+  echo "nc is not installed"
+  echo "link to install nc: https://formulae.brew.sh/formula/netcat"
+  exit
 fi
-nc -z "$server" $PORTNUMBER
-
-if [ $? -eq 0 ]; then
-  echo "Port 443 is open."
-else
-  echo "Port 443 is closed."
-  email_body="Port 443 is down on $server."
- sendemail -f $FROM_EMAIL -t $TO_EMAIL -u $SUBJECT -m $email_body -s smtp.gmail.com:587 -o tls=yes -xu $SMTP_USERNAME -xp $SMTP_PASSWORD 
-fi
-
+while true; do
+  nc -z "$SERVER" $PORTNUMBER
+  if [ $? -eq 0 ]; then
+    echo "Port $PORTNUMBER is open."
+  else
+    echo "Port $PORTNUMBER is closed."
+    email_body="Port $PORTNUMBER is down on $server."
+    sendemail -f $FROM_EMAIL -t $TO_EMAIL -u $SUBJECT -m $email_body -s $SMTP_SERVER:$SMTP_PORT -o tls=yes -xu $SMTP_USERNAME -xp $SMTP_PASSWORD
+    exit 1
+  fi
+  sleep 10
+done
