@@ -35,7 +35,7 @@ td {
 
 
 // Connect to MongoDB server
-$manager = new MongoDB\Driver\Manager("mongodb://172.18.0.34:27017");
+$manager = new MongoDB\Driver\Manager("mongodb://mongo:27017");
 
 $query = new MongoDB\Driver\Query(array());
 
