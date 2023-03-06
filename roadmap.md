@@ -70,6 +70,7 @@
 # readme.md
 
 ✅ developpemt 
+✅ readme go dev and deploy
 
 👷🏻‍♀️ deployment
 
