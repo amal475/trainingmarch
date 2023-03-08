@@ -69,6 +69,7 @@
 # openai
 
  👷🏻‍♀️ development 
+ blocage Create a fine-tuned model
 
 # readme.md
 
