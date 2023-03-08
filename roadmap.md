@@ -66,6 +66,9 @@
 # script shell
 
 ✅ developpemt 
+# openai
+
+ 👷🏻‍♀️ development 
 
 # readme.md
 
