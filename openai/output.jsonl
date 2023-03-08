@@ -1,0 +1,4 @@
+{"prompt":"Comment ecrire hello world avec un langage?","completion":"Réponse Java System.out.println Hello World"}
+{"prompt":"Comment ecrire hello world avec un langage moderne?","completion": "console.log Hello World "}
+{"prompt":"Comment ecrire hello world avec un langage complexe ?","completion":"System.out.println Hello World"}
+{"prompt":"hello world est un programme simple Comment ecrire hello world avec un langage complexe ?","completion":"La réponse dépend du langage complexe que vous utilisez. Par exemple, en Java, vous pouvez écrire Hello World en utilisant la méthode"}
