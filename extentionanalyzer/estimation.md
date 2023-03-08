@@ -1,1 +1,1 @@
-`  2 days et 2 hours`
+`  2 days and 2 hours`
